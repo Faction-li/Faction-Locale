@@ -1,9 +1,9 @@
 {
   "common": {
-    "save": "Enregistrer",
-    "cancel": "Annuler",
-    "delete": "Supprimer",
-    "edit": "Modifier",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
     "create": "Create",
     "close": "Close",
     "confirm": "Confirm",
