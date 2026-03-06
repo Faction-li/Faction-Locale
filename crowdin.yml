@@ -1,5 +1,4 @@
 files:
   - source: /locales/en.json
-    translation: /locales/%two_letters_code%.json
-  - source: /locales/en.json
     translation: /locales/%locale_with_underscore%.json
+    multilingual: 1
