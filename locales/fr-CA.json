@@ -95,8 +95,8 @@
     "fileDesc": "Partagez des fichiers dans des dossiers avec contrôles de téléchargement"
   },
   "message": {
-    "placeholder": "Message #{{channel}}",
-    "placeholderDM": "Message @{{user}}",
+    "placeholder": "Envoyer un message dans #{{channel}}",
+    "placeholderDM": "Envoyer un message @{{user}}",
     "edited": "(modifié)",
     "deleted": "Ce message a été supprimé",
     "pinned": "a épinglé un message",
