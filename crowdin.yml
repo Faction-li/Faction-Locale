@@ -1,0 +1,3 @@
+files:
+  - source: base-en.json
+    translation: /locales/%locale%.json
