@@ -2,7 +2,7 @@
    <a title="Crowdin" target="_blank" href="https://crowdin.com/project/faction-community-localization"><img src="https://badges.crowdin.net/faction-community-localization/localized.svg"></a>
 </div>
 
-# 🌍 Help Translate Our Chat Platform
+# 🌍 Help Translate Our Platform!
 
 We welcome the community to help localize our chat platform into more languages!
 
