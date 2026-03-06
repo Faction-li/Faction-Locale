@@ -1,91 +1,59 @@
-# Faction Locale Repository
+<div align="center">
+   <a title="Crowdin" target="_blank" href="https://crowdin.com/project/faction-community-localization"><img src="https://badges.crowdin.net/faction-community-localization/localized.svg"></a>
+</div>
 
-This repository contains the source translation files for Faction's client UI.
+# 🌍 Help Translate Our Chat Platform
 
-## Purpose
+We welcome the community to help localize our chat platform into more languages!
 
-- Keep all locale files in one place for easier community contributions.
-- Track translation changes independently from app feature code.
-- Make it simple to review and merge language updates.
+We use **Crowdin** to manage translations and make collaboration easy.
 
-## Source of truth
+## 📝 How to Contribute
 
-Locale files in this repository are synced from the app path:
+1. Visit our Crowdin project: **https://crowdin.com/project/faction-community-localization**
 
-`web/src/i18n/locales`
+2. Request to become a translator
+   - (Please allow 1-2 business days)
+   
+4. Choose the language you want to translate.
 
-## Repository structure
+5. Start translating strings directly in the editor.
 
-- `locales/en.json` - English base locale
-- `locales/<language-code>.json` - additional locales (for example `es.json`, `fr.json`, `pt-BR.json`)
-- `LANGUAGE_CODES.md` - quick reference for locale file names and language codes
+6. Submit your translations — our reviewers will approve them and they will be included in future releases.
 
-## Contribution guidelines
+No coding knowledge is required!
 
-1. Copy `locales/en.json` as your starting point for a new language.
-2. Keep the exact same key structure and nesting as `en.json`.
-3. Translate values only. Do not rename or remove keys.
-4. Preserve placeholders like `{{channel}}`, `{{user}}`, and interpolation tokens.
-5. Keep JSON valid (UTF-8, no trailing comments).
+## ⚠️ Translation Guidelines
 
-## Adding a new locale
+Please keep these rules in mind when translating:
 
-1. Create a new file:
-   - Example: `locales/es.json`
-2. Translate every string value from `en.json`.
-3. Open a pull request.
+* Do **not translate variables inside `{{ }}`**
+  Example: `{{count}}`, `{{channel}}`, `{{user}}`
 
-## Updating an existing locale
+* Keep the meaning consistent with the UI context.
 
-1. Sync missing keys from `en.json`.
-2. Update translations for changed text.
-3. Open a pull request with a clear summary of what changed.
+* Some keys have plural forms such as:
 
-## Pull request examples
+  ```
+  minutesAgo_one (1 minute)
+  minutesAgo_other (2+ minutes)
+  ```
 
-### Example 1: New language
+  These should both be translated correctly.
 
-Title:
+## 📚 Glossary
 
-`feat(locale): add Spanish locale (es.json)`
+Certain terms have specific meanings in the platform:
 
-Description:
+| Term           | Meaning                               |
+| -------------- | ------------------------------------- |
+| Server         | A community space containing channels |
+| Channel        | A location where messages are posted  |
+| Direct Message | Private conversation between users    |
+| Role           | A permission group for members        |
 
-- Added `locales/es.json`
-- Translated all keys currently in `locales/en.json`
-- Verified placeholder tokens are unchanged (`{{channel}}`, etc.)
+Crowdin will highlight glossary terms while translating.
 
-### Example 2: Existing locale update
+## ❤️ Thank You
 
-Title:
-
-`chore(locale): sync French locale with new channel keys`
-
-Description:
-
-- Updated `locales/fr.json`
-- Added missing keys from latest `locales/en.json`
-- Updated translated copy for channel creation labels
-
-### Example 3: Fix translation issues
-
-Title:
-
-`fix(locale): correct Portuguese placeholders and punctuation`
-
-Description:
-
-- Fixed placeholder formatting in `locales/pt-BR.json`
-- Corrected grammar in notification strings
-- No key changes
-
-## Suggested PR checklist
-
-- [ ] Locale file remains valid JSON
-- [ ] Key structure matches `locales/en.json`
-- [ ] Placeholder/interpolation tokens were preserved
-- [ ] No unrelated file changes
-
-## Maintainer notes
-
-When app locale files are updated, sync them here so contributors always translate against the latest base keys.
+Community translations help make the platform accessible to people all around the world. We appreciate every contribution!
