@@ -1,10 +1,10 @@
 {
   "common": {
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "create": "Create",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Borrar",
+    "edit": "Editar",
+    "create": "Crear",
     "close": "Close",
     "confirm": "Confirm",
     "back": "Back",
